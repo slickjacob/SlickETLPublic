@@ -249,6 +249,45 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
+    <Content Include="Theme\Landing\css\animate.min.css" />
+    <Content Include="Theme\Landing\css\bootstrap-theme.css" />
+    <Content Include="Theme\Landing\css\bootstrap-theme.min.css" />
+    <Content Include="Theme\Landing\css\bootstrap.css" />
+    <Content Include="Theme\Landing\css\bootstrap.min.css" />
+    <Content Include="Theme\Landing\css\style.css" />
+    <Content Include="Theme\Landing\css\style.min.css">
+      <DependentUpon>style.css</DependentUpon>
+    </Content>
+    <Content Include="Theme\Landing\font-awesome\css\font-awesome.css" />
+    <Content Include="Theme\Landing\font-awesome\css\font-awesome.min.css" />
+    <Content Include="Theme\Landing\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="Theme\Landing\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Theme\Landing\img\avatar1.jpg" />
+    <Content Include="Theme\Landing\img\avatar2.jpg" />
+    <Content Include="Theme\Landing\img\avatar3.jpg" />
+    <Content Include="Theme\Landing\img\avatar4.jpg" />
+    <Content Include="Theme\Landing\img\avatar5.jpg" />
+    <Content Include="Theme\Landing\img\avatar6.jpg" />
+    <Content Include="Theme\Landing\img\avatar7.jpg" />
+    <Content Include="Theme\Landing\img\avatar8.jpg" />
+    <Content Include="Theme\Landing\img\avatar9.jpg" />
+    <Content Include="Theme\Landing\img\avatar_all.png" />
+    <Content Include="Theme\Landing\img\dashboard.png" />
+    <Content Include="Theme\Landing\img\header_one.jpg" />
+    <Content Include="Theme\Landing\img\header_two.jpg" />
+    <Content Include="Theme\Landing\img\iphone.jpg" />
+    <Content Include="Theme\Landing\img\laptop.png" />
+    <Content Include="Theme\Landing\img\perspective.png" />
+    <Content Include="Theme\Landing\img\shattered.png" />
+    <Content Include="Theme\Landing\img\word_map.png" />
+    <Content Include="Theme\Landing\js\bootstrap.js" />
+    <Content Include="Theme\Landing\js\bootstrap.min.js" />
+    <Content Include="Theme\Landing\js\cbpAnimatedHeader.js" />
+    <Content Include="Theme\Landing\js\classie.js" />
+    <Content Include="Theme\Landing\js\inspinia.js" />
+    <Content Include="Theme\Landing\js\jquery-2.1.1.js" />
+    <Content Include="Theme\Landing\js\pace.min.js" />
+    <Content Include="Theme\Landing\js\wow.min.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -265,6 +304,45 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Theme\Landing\css\bootstrap-theme.css.map" />
+    <Content Include="Theme\Landing\css\bootstrap.css.map" />
+    <Content Include="Theme\Landing\css\style.less" />
+    <Content Include="Theme\Landing\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="Theme\Landing\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Theme\Landing\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="Theme\Landing\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="Theme\Landing\font-awesome\less\bordered-pulled.less" />
+    <Content Include="Theme\Landing\font-awesome\less\core.less" />
+    <Content Include="Theme\Landing\font-awesome\less\fixed-width.less" />
+    <Content Include="Theme\Landing\font-awesome\less\font-awesome.less" />
+    <Content Include="Theme\Landing\font-awesome\less\icons.less" />
+    <Content Include="Theme\Landing\font-awesome\less\larger.less" />
+    <Content Include="Theme\Landing\font-awesome\less\list.less" />
+    <Content Include="Theme\Landing\font-awesome\less\mixins.less" />
+    <Content Include="Theme\Landing\font-awesome\less\path.less" />
+    <Content Include="Theme\Landing\font-awesome\less\rotated-flipped.less" />
+    <Content Include="Theme\Landing\font-awesome\less\spinning.less" />
+    <Content Include="Theme\Landing\font-awesome\less\stacked.less" />
+    <Content Include="Theme\Landing\font-awesome\less\variables.less" />
+    <Content Include="Theme\Landing\font-awesome\scss\font-awesome.scss" />
+    <Content Include="Theme\Landing\font-awesome\scss\_bordered-pulled.scss" />
+    <Content Include="Theme\Landing\font-awesome\scss\_core.scss" />
+    <Content Include="Theme\Landing\font-awesome\scss\_fixed-width.scss" />
+    <Content Include="Theme\Landing\font-awesome\scss\_icons.scss" />
+    <Content Include="Theme\Landing\font-awesome\scss\_larger.scss" />
+    <Content Include="Theme\Landing\font-awesome\scss\_list.scss" />
+    <Content Include="Theme\Landing\font-awesome\scss\_mixins.scss" />
+    <Content Include="Theme\Landing\font-awesome\scss\_path.scss" />
+    <Content Include="Theme\Landing\font-awesome\scss\_rotated-flipped.scss" />
+    <Content Include="Theme\Landing\font-awesome\scss\_spinning.scss" />
+    <Content Include="Theme\Landing\font-awesome\scss\_stacked.scss" />
+    <Content Include="Theme\Landing\font-awesome\scss\_variables.scss" />
+    <Content Include="Theme\Landing\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Theme\Landing\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Theme\Landing\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Theme\Landing\css\style.css.map">
+      <DependentUpon>style.css</DependentUpon>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
