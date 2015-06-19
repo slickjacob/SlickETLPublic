@@ -219,6 +219,7 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="robots.txt" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Areas\HelpPage\Views\Web.config" />
@@ -262,8 +263,12 @@
     </Content>
     <Content Include="Theme\Landing\font-awesome\css\font-awesome.css" />
     <Content Include="Theme\Landing\font-awesome\css\font-awesome.min.css" />
-    <Content Include="Theme\Landing\font-awesome\fonts\fontawesome-webfont.svg" />
-    <Content Include="Theme\Landing\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Theme\Landing\font-awesome\fonts\fontawesome-webfont.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Theme\Landing\fonts\glyphicons-halflings-regular.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Theme\Landing\img\avatar1.jpg" />
     <Content Include="Theme\Landing\img\avatar2.jpg" />
     <Content Include="Theme\Landing\img\avatar3.jpg" />
@@ -276,7 +281,11 @@
     <Content Include="Theme\Landing\img\avatar_all.png" />
     <Content Include="Theme\Landing\img\dashboard.png" />
     <Content Include="Theme\Landing\img\header_one.jpg" />
+    <Content Include="Theme\Landing\img\header_one_orig.jpg" />
+    <Content Include="Theme\Landing\img\header_three.jpg" />
     <Content Include="Theme\Landing\img\header_two.jpg" />
+    <Content Include="Theme\Landing\img\header_two_orig.jpg" />
+    <Content Include="Theme\Landing\img\ipad.png" />
     <Content Include="Theme\Landing\img\iphone.jpg" />
     <Content Include="Theme\Landing\img\laptop.png" />
     <Content Include="Theme\Landing\img\perspective.png" />
@@ -309,10 +318,18 @@
     <Content Include="Theme\Landing\css\bootstrap-theme.css.map" />
     <Content Include="Theme\Landing\css\bootstrap.css.map" />
     <Content Include="Theme\Landing\css\style.less" />
-    <Content Include="Theme\Landing\font-awesome\fonts\fontawesome-webfont.eot" />
-    <Content Include="Theme\Landing\font-awesome\fonts\fontawesome-webfont.ttf" />
-    <Content Include="Theme\Landing\font-awesome\fonts\fontawesome-webfont.woff" />
-    <Content Include="Theme\Landing\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="Theme\Landing\font-awesome\fonts\fontawesome-webfont.eot">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Theme\Landing\font-awesome\fonts\fontawesome-webfont.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Theme\Landing\font-awesome\fonts\fontawesome-webfont.woff">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Theme\Landing\font-awesome\fonts\FontAwesome.otf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Theme\Landing\font-awesome\less\bordered-pulled.less" />
     <Content Include="Theme\Landing\font-awesome\less\core.less" />
     <Content Include="Theme\Landing\font-awesome\less\fixed-width.less" />
@@ -339,9 +356,15 @@
     <Content Include="Theme\Landing\font-awesome\scss\_spinning.scss" />
     <Content Include="Theme\Landing\font-awesome\scss\_stacked.scss" />
     <Content Include="Theme\Landing\font-awesome\scss\_variables.scss" />
-    <Content Include="Theme\Landing\fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="Theme\Landing\fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="Theme\Landing\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Theme\Landing\fonts\glyphicons-halflings-regular.eot">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Theme\Landing\fonts\glyphicons-halflings-regular.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Theme\Landing\fonts\glyphicons-halflings-regular.woff">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Theme\Landing\css\style.css.map">
       <DependentUpon>style.css</DependentUpon>
     </Content>
