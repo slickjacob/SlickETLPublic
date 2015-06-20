@@ -845,7 +845,6 @@
     <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Theme\Landing\css\bootstrap-theme.css.map" />
@@ -903,7 +902,7 @@
     </Content>
     <Content Include="Views\Home\Connectors.cshtml" />
     <Content Include="Views\Home\FAQ.cshtml" />
-    <Content Include="Views\Shared\_Layout_2.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Theme\Layout2\Content\bootstrap-theme.css.map" />
     <Content Include="Theme\Layout2\Content\bootstrap.css.map" />
     <Content Include="Theme\Layout2\Content\plugins\bootstrap-rtl\bootstrap-rtl.css.map" />

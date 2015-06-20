@@ -1,345 +1,473 @@
-﻿
-    <div id="inSlider" class="carousel slide carousel-fade" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#inSlider" data-slide-to="0" class="active"></li>
-            <li data-target="#inSlider" data-slide-to="1"></li>
-            <li data-target="#inSlider" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner" role="listbox">
-            <div class="item active">
-                <div class="container">
-                    <div class="carousel-caption ">
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Add Your favicon here -->
+    <!--<link rel="icon" href="img/favicon.ico">-->
 
-                        <h1 style="text-transform:none;font-weight:lighter;">
-                            <span class="brand-font">Slick</span>ETL
-                        </h1>
-                        <h1>The easiest way you'll ever find to import files, export files, and transfer data</h1>
-                        <p>
-                            <a class="btn btn-lg btn-primary" href="#" role="button">Request Demo</a>
-                        </p>
-                    </div>
+    <title>@ViewBag.Title</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="~/Theme/Landing/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Animation CSS -->
+    <link href="~/Theme/Landing/css/animate.min.css" rel="stylesheet">
+
+    <link href="~/Theme/Landing/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Custom styles for this template -->
+    <link href="~/Theme/Landing/css/style.css" rel="stylesheet">
+    <link href="~/Content/Site.css" rel="stylesheet">
+
+</head>
+<body id="page-top">
+    <div class="navbar-wrapper">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <span class="brand-font">Slick</span>ETL
+                    </a>
                 </div>
-                <!-- Set background for slide in css -->
-                <div class="header-back one"></div>
-
-            </div>
-            <div class="item">
-                <div class="container">
-                    <div class="carousel-caption">
-                        <h1 style="text-transform:none;font-weight:lighter;">
-                            <span class="brand-font">Slick</span>ETL
-                        </h1>
-                        <h1>
-                            It really shouldn't be that <br />
-                            hard to get your data <br />
-                            where you want it to be
-                        </h1>
-                        <p>
-                            <a class="btn btn-lg btn-primary" href="#" role="button">Request Demo</a>
-                        </p>
-                    </div>
-                    <div class="carousel-image wow zoomIn">
-                        <img src="~/Theme/Landing/img/laptop.png" alt="laptop" />
-                    </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a class="page-scroll" href="#page-top">Home</a></li>
+                        <li><a class="page-scroll" href="#features">Features</a></li>
+                        <li><a class="page-scroll" href="@Url.Action("FAQ","Home")">FAQ</a></li>
+                        <li><a class="page-scroll" href="@Url.Action("Connectors","Home")">Connectors</a></li>
+                        <li><a class="page-scroll" href="#pricing">Pricing</a></li>
+                        <li><a class="page-scroll" href="#contact">Contact</a></li>
+                    </ul>
                 </div>
-                <!-- Set background for slide in css -->
-                <div class="header-back two"></div>
-
             </div>
-
-            <div class="item">
-                <div class="container">
-                    <div class="carousel-caption">
-                        <h1 style="text-transform:none;font-weight:lighter;">
-                            <span class="brand-font">Slick</span>ETL
-                        </h1>
-                        <h1>
-                            Design / Test / Deploy / Manage <br />
-                            ALL IN ONE PLACE
-                        </h1>
-                        <p class="text-muted">(and you don't have to be a developer)</p>
-                        <p>
-                            <a class="btn btn-lg btn-primary" href="#" role="button">Request Demo</a>
-                        </p>
-                    </div>
-                    <div class="carousel-image wow zoomIn">
-                        <img src="~/Theme/Landing/img/ipad.png" alt="laptop" />
-                    </div>
-                </div>
-                <!-- Set background for slide in css -->
-                <div class="header-back three"></div>
-
-            </div>
-
-        </div>
-        <a class="left carousel-control" href="#inSlider" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#inSlider" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
+        </nav>
     </div>
 
+    <div>
+        <div id="inSlider" class="carousel slide carousel-fade" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#inSlider" data-slide-to="0" class="active"></li>
+                <li data-target="#inSlider" data-slide-to="1"></li>
+                <li data-target="#inSlider" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <div class="container">
+                        <div class="carousel-caption ">
 
-    <section id="features" class="container services">
-        <div class="row">
-            <div class="col-sm-3">
-                <h2>WATCH...</h2>
-                <p>a folder or an FTP site for a new file that matches a naming convention. Automatically archive/rename it and import it into a database when it shows up.</p>
-                <p><a class="navy-link" href="#" role="button">&raquo; Setup in about 10 minutes </a></p>
-            </div>
-            <div class="col-sm-3">
-                <h2>SCHEDULE...</h2>
-                <p>the results of a query to be copied to a different database, either on-premise or in the cloud.</p>
-                <p><a class="navy-link" href="#" role="button">&raquo; Idea to done as quick as 5 minutes </a></p>
-            </div>
-            <div class="col-sm-3">
-                <h2>EXPORT...</h2>
-                <p>the results of a query to a file on disk or on an FTP site, either on demand OR on a schedule.</p>
-                <p><a class="navy-link" href="#" role="button">&raquo; Up and running as fast as you can write the query </a></p>
-            </div>
-            <div class="col-sm-3">
-                <h2>RUN...</h2>
-                <p>any kind of procs, scripts, web hooks or reports after the job is finished.</p>
-                <p><a class="navy-link" href="#" role="button">&raquo; With just a few clicks</a></p>
-            </div>
-        </div>
-    </section>
-
-    <section class="features">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <div class="navy-line"></div>
-                    <h1>
-                        Powerful enough for an enterprise<br />
-                        <span class="navy"> but simple and cost-effective</span>
-                    </h1>
-                </div>
-            </div>
-            <div class="row features-block">
-                <div class="col-lg-3 features-text wow fadeInLeft">
-                    <small>ENTERPRISE</small>
-                    <h2>Supportable / Scalable / Auditable </h2>
-                    <p>
-                        <span class="brand-font">Slick</span>ETL can handle nearly any data integration challenge you're facing. It can be used via SaaS, or installed on-premise.
-                        The dataflow designer has built-in change tracking and access control. Custom data quality rules can trigger mobile alerts and notifications. Built-in job and server
-                        monitoring will have your support team begging you to use this tool. And it scales beautifully: the more you put on this system, the more benefit you get out of it.
-                    </p>
-                    <a href="" class="btn btn-primary">See complete features</a>
-                </div>
-                <div class="col-lg-6 text-right m-t-n-lg wow zoomIn">
-                    <img src="~/Theme/Landing/img/iphone.jpg" class="img-responsive" alt="dashboard">
-                </div>
-                <div class="col-lg-3 features-text text-right wow fadeInRight">
-                    <small>SIMPLICITY</small>
-                    <h2>Accessible / Intuitive / Automatic </h2>
-                    <p>
-                        The integrated designer/runner means you don't have to know 5 different languages to deploy and manage an ETL job. The system is easily piloted by people who just want
-                        to move data around and not spend their days debugging opaque error messages about package encryption and server compatibility. Detailed, readable logs will tell you exactly
-                        what went wrong, if anything does.
-                    </p>
-                    <a href="" class="btn btn-primary">Let us prove it</a>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <section id="philosophy" class="navy-section testimonials">
-
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center wow zoomIn">
-                    <i class="fa fa-comment big-icon"></i>
-                    <h1>
-                        Our philosophy
-                    </h1>
-                    <div class="testimonials-text">
-                        It's our experience that the vast majority of data integration challenges faced by firms today are still quite simple. Import some files into a database, transfer data between databases,
-                        export queries to files. And you usually want some smart data-driven workflow around it... Perhaps clear some data out of a table before loading new data. Or add some calculated fields and lookup data.
-                        Oh, and it would be nice to be notified automatically if things go wrong or the data is bad. All modern ETL frameworks can handle these use cases... but they make it SO HARD!
-                        Ever written a custom application to watch a hot folder and then kick off an SSIS package? Ever spent an entire day trying to figure out why a particular job was failing? There will always
-                        be a place for mammoth ETL frameworks that can load a terabyte of data in less than a second, or have 413 ways you can configure 87 different kinds of transformations. But that's not us.
+                            <h1 style="text-transform:none;font-weight:lighter;">
+                                <span class="brand-font">Slick</span>ETL
+                            </h1>
+                            <h1>The easiest way you'll ever find to import files, export files, and transfer data</h1>
+                            <p>
+                                <a class="btn btn-lg btn-primary" href="#" role="button">Request Demo</a>
+                            </p>
+                        </div>
                     </div>
-                    <strong>Our goal is to make 90% of what you do 90% easier.</strong>
+                    <!-- Set background for slide in css -->
+                    <div class="header-back one"></div>
+
                 </div>
+                <div class="item">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1 style="text-transform:none;font-weight:lighter;">
+                                <span class="brand-font">Slick</span>ETL
+                            </h1>
+                            <h1>
+                                It really shouldn't be that <br />
+                                hard to get your data <br />
+                                where you want it to be
+                            </h1>
+                            <p>
+                                <a class="btn btn-lg btn-primary" href="#" role="button">Request Demo</a>
+                            </p>
+                        </div>
+                        <div class="carousel-image wow zoomIn">
+                            <img src="~/Theme/Landing/img/laptop.png" alt="laptop" />
+                        </div>
+                    </div>
+                    <!-- Set background for slide in css -->
+                    <div class="header-back two"></div>
+
+                </div>
+
+                <div class="item">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1 style="text-transform:none;font-weight:lighter;">
+                                <span class="brand-font">Slick</span>ETL
+                            </h1>
+                            <h1>
+                                Design / Test / Deploy / Manage <br />
+                                ALL IN ONE PLACE
+                            </h1>
+                            <p class="text-muted">(and you don't have to be a developer)</p>
+                            <p>
+                                <a class="btn btn-lg btn-primary" href="#" role="button">Request Demo</a>
+                            </p>
+                        </div>
+                        <div class="carousel-image wow zoomIn">
+                            <img src="~/Theme/Landing/img/ipad.png" alt="laptop" />
+                        </div>
+                    </div>
+                    <!-- Set background for slide in css -->
+                    <div class="header-back three"></div>
+
+                </div>
+
             </div>
+            <a class="left carousel-control" href="#inSlider" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#inSlider" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
 
-    </section>
 
-    <section id="pricing" class="pricing">
-        <div class="container">
-            <div class="row m-b-lg">
-                <div class="col-lg-12 text-center">
-                    <h1>Features and Pricing</h1>
-
-                    <p><small>There are tons of features and subtleties that don't fit here. If you have questions about what we can do or what's included, drop us a line with the form below. </small></p>
+        <section id="features" class="container services">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h2>WATCH...</h2>
+                    <p>a folder or an FTP site for a new file that matches a naming convention. Automatically archive/rename it and import it into a database when it shows up.</p>
+                    <p><a class="navy-link" href="#" role="button">&raquo; Setup in about 10 minutes </a></p>
+                </div>
+                <div class="col-sm-3">
+                    <h2>SCHEDULE...</h2>
+                    <p>the results of a query to be copied to a different database, either on-premise or in the cloud.</p>
+                    <p><a class="navy-link" href="#" role="button">&raquo; Idea to done as quick as 5 minutes </a></p>
+                </div>
+                <div class="col-sm-3">
+                    <h2>EXPORT...</h2>
+                    <p>the results of a query to a file on disk or on an FTP site, either on demand OR on a schedule.</p>
+                    <p><a class="navy-link" href="#" role="button">&raquo; Up and running as fast as you can write the query </a></p>
+                </div>
+                <div class="col-sm-3">
+                    <h2>RUN...</h2>
+                    <p>any kind of procs, scripts, web hooks or reports after the job is finished.</p>
+                    <p><a class="navy-link" href="#" role="button">&raquo; With just a few clicks</a></p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-4 wow zoomIn">
-                    <ul class="pricing-plan list-unstyled">
-                        <li class="pricing-title">
-                            Small Teams
-                        </li>
-                        <li class="pricing-desc">
-                            Best for teams that don't have a ton of jobs, and just want to move data without the overhead so they can get back to their real jobs
-                        </li>
-                        <li class="pricing-price">
-                            <span>$1000</span> / year
-                        </li>
-                        <li>
-                            Up to 20 jobs
-                        </li>
-                        <li>
-                            Hosted environment
-                        </li>
-                        <li>
-                            Detailed history and logging
-                        </li>
-                        <li>
-                            Custom job notifications
-                        </li>
-                        <li>
-                            Access to help videos and documentation
-                        </li>
-                        <li>
-                            Data quality screens and workflows
-                        </li>
-                        <li>
-                            Load data directly to your on-premise databases or your hosted databases in AWS or Azure.
-                        </li>
-                        <li>
-                            <a class="btn btn-primary btn-xs" href="#">Signup</a>
-                        </li>
-                    </ul>
-                </div>
+        </section>
 
-                <div class="col-lg-4 wow zoomIn">
-                    <ul class="pricing-plan list-unstyled selected">
-                        <li class="pricing-title">
-                            Enterprise
-                        </li>
-                        <li class="pricing-desc">
-                            Best for large companies with lots of data and technology teams who want to realize long-term cost savings
-                        </li>
-                        <li class="plan-action pricing-price">
-                            <a class="btn btn-primary btn-xs" href="#">Contact Us</a>
-                        </li>
-                        <li>
-                            Dedicated hosting or on-premise installation
-                        </li>
-                        <li>
-                            Unlimited # of jobs
-                        </li>
-                        <li>
-                            Top-notch support, and access to our "cookbook" (tips and tricks to milk the system)
-                        </li>
-                        <li>
-                            Multiple environments for test or development
-                        </li>
-                        <li>
-                            Single sign-on with custom security (who has access to edit or run jobs)
-                        </li>
-                    </ul>
+        <section class="features">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <div class="navy-line"></div>
+                        <h1>
+                            Powerful enough for an enterprise<br />
+                            <span class="navy"> but simple and cost-effective</span>
+                        </h1>
+                    </div>
                 </div>
+                <div class="row features-block">
+                    <div class="col-lg-3 features-text wow fadeInLeft">
+                        <small>ENTERPRISE</small>
+                        <h2>Supportable / Scalable / Auditable </h2>
+                        <p>
+                            <span class="brand-font">Slick</span>ETL can handle nearly any data integration challenge you're facing. It can be used via SaaS, or installed on-premise.
+                            The dataflow designer has built-in change tracking and access control. Custom data quality rules can trigger mobile alerts and notifications. Built-in job and server
+                            monitoring will have your support team begging you to use this tool. And it scales beautifully: the more you put on this system, the more benefit you get out of it.
+                        </p>
+                        <a href="" class="btn btn-primary">See complete features</a>
+                    </div>
+                    <div class="col-lg-6 text-right m-t-n-lg wow zoomIn">
+                        <img src="~/Theme/Landing/img/iphone.jpg" class="img-responsive" alt="dashboard">
+                    </div>
+                    <div class="col-lg-3 features-text text-right wow fadeInRight">
+                        <small>SIMPLICITY</small>
+                        <h2>Accessible / Intuitive / Automatic </h2>
+                        <p>
+                            The integrated designer/runner means you don't have to know 5 different languages to deploy and manage an ETL job. The system is easily piloted by people who just want
+                            to move data around and not spend their days debugging opaque error messages about package encryption and server compatibility. Detailed, readable logs will tell you exactly
+                            what went wrong, if anything does.
+                        </p>
+                        <a href="" class="btn btn-primary">Let us prove it</a>
+                    </div>
+                </div>
+            </div>
 
-                <div class="col-lg-4 wow zoomIn">
-                    <ul class="pricing-plan list-unstyled">
-                        <li class="pricing-title">
-                            Small Business
-                        </li>
-                        <li class="pricing-desc">
-                            Best for companies with a fair amount of data needs, but without robust technology support
-                        </li>
-                        <li class="pricing-price">
-                            <span>$5,000</span> / year
-                        </li>
-                        <li>
-                            Up to 100 jobs
-                        </li>
-                        <li>
-                            Hosted environment
-                        </li>
-                        <li>
-                            Proactive monitoring services available* <br />
-                            We'll let you know about system outages and overdue jobs
-                        </li>
-                        <li>
-                            Job analytics and visualizations
-                        </li>
-                        <li>
-                            Access to personal support and training*
-                        </li>
-                        <li>
-                            <a class="btn btn-primary btn-xs" href="#">Signup</a>
-                        </li>
-                    </ul>
-                    <div class="row m-t-lg">
-                        <div class="col-lg-8 col-lg-offset-2 text-center m-t-lg">
-                            <p>*Some services may cost extra, depending on your needs.</p>
+        </section>
+
+        <section id="philosophy" class="navy-section testimonials">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center wow zoomIn">
+                        <i class="fa fa-comment big-icon"></i>
+                        <h1>
+                            Our philosophy
+                        </h1>
+                        <div class="testimonials-text">
+                            It's our experience that the vast majority of data integration challenges faced by firms today are still quite simple. Import some files into a database, transfer data between databases,
+                            export queries to files. And you usually want some smart data-driven workflow around it... Perhaps clear some data out of a table before loading new data. Or add some calculated fields and lookup data.
+                            Oh, and it would be nice to be notified automatically if things go wrong or the data is bad. All modern ETL frameworks can handle these use cases... but they make it SO HARD!
+                            Ever written a custom application to watch a hot folder and then kick off an SSIS package? Ever spent an entire day trying to figure out why a particular job was failing? There will always
+                            be a place for mammoth ETL frameworks that can load a terabyte of data in less than a second, or have 413 ways you can configure 87 different kinds of transformations. But that's not us.
+                        </div>
+                        <strong>Our goal is to make 90% of what you do 90% easier.</strong>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="pricing" class="pricing">
+            <div class="container">
+                <div class="row m-b-lg">
+                    <div class="col-lg-12 text-center">
+                        <h1>Features and Pricing</h1>
+
+                        <p><small>There are tons of features and subtleties that don't fit here. If you have questions about what we can do or what's included, drop us a line with the form below. </small></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 wow zoomIn">
+                        <ul class="pricing-plan list-unstyled">
+                            <li class="pricing-title">
+                                Small Teams
+                            </li>
+                            <li class="pricing-desc">
+                                Best for teams that don't have a ton of jobs, and just want to move data without the overhead so they can get back to their real jobs
+                            </li>
+                            <li class="pricing-price">
+                                <span>$1000</span> / year
+                            </li>
+                            <li>
+                                Up to 20 jobs
+                            </li>
+                            <li>
+                                Hosted environment
+                            </li>
+                            <li>
+                                Detailed history and logging
+                            </li>
+                            <li>
+                                Custom job notifications
+                            </li>
+                            <li>
+                                Access to help videos and documentation
+                            </li>
+                            <li>
+                                Data quality screens and workflows
+                            </li>
+                            <li>
+                                Load data directly to your on-premise databases or your hosted databases in AWS or Azure.
+                            </li>
+                            <li>
+                                <a class="btn btn-primary btn-xs" href="#">Signup</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 wow zoomIn">
+                        <ul class="pricing-plan list-unstyled selected">
+                            <li class="pricing-title">
+                                Enterprise
+                            </li>
+                            <li class="pricing-desc">
+                                Best for large companies with lots of data and technology teams who want to realize long-term cost savings
+                            </li>
+                            <li class="plan-action pricing-price">
+                                <a class="btn btn-primary btn-xs" href="#">Contact Us</a>
+                            </li>
+                            <li>
+                                Dedicated hosting or on-premise installation
+                            </li>
+                            <li>
+                                Unlimited # of jobs
+                            </li>
+                            <li>
+                                Top-notch support, and access to our "cookbook" (tips and tricks to milk the system)
+                            </li>
+                            <li>
+                                Multiple environments for test or development
+                            </li>
+                            <li>
+                                Single sign-on with custom security (who has access to edit or run jobs)
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 wow zoomIn">
+                        <ul class="pricing-plan list-unstyled">
+                            <li class="pricing-title">
+                                Small Business
+                            </li>
+                            <li class="pricing-desc">
+                                Best for companies with a fair amount of data needs, but without robust technology support
+                            </li>
+                            <li class="pricing-price">
+                                <span>$5,000</span> / year
+                            </li>
+                            <li>
+                                Up to 100 jobs
+                            </li>
+                            <li>
+                                Hosted environment
+                            </li>
+                            <li>
+                                Proactive monitoring services available* <br />
+                                We'll let you know about system outages and overdue jobs
+                            </li>
+                            <li>
+                                Job analytics and visualizations
+                            </li>
+                            <li>
+                                Access to personal support and training*
+                            </li>
+                            <li>
+                                <a class="btn btn-primary btn-xs" href="#">Signup</a>
+                            </li>
+                        </ul>
+                        <div class="row m-t-lg">
+                            <div class="col-lg-8 col-lg-offset-2 text-center m-t-lg">
+                                <p>*Some services may cost extra, depending on your needs.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
+
             </div>
 
-        </div>
+        </section>
 
-    </section>
+        <section class="features">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <div class="navy-line"></div>
+                        <h1>Yep, we can do that!</h1>
+                        <p>Just because the system is easy to use doesn't mean it isn't powerful. These are a few of our favorite features available to advanced users.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-5 col-lg-offset-1 features-text">
+                        <small><span class="brand-font">Slick</span>ETL</small>
+                        <h2>Did you send me that spreadsheet?</h2>
+                        <i class="fa fa-envelope-square big-icon pull-right"></i>
+                        <p>
+                            The system can automatically monitor an IMAP or POP3 mailbox for emails matching certain criteria. That invoice or bank statement you get every Monday at 7 AM? We'll automatically
+                            load it into a database or reformat it and save it to your dropbox.
+                        </p>
+                    </div>
+                    <div class="col-lg-5 features-text">
+                        <small><span class="brand-font">Slick</span>ETL</small>
+                        <h2>I'm out of the office today </h2>
+                        <i class="fa fa-phone big-icon pull-right"></i>
+                        <p>
+                            You can subscribe to email or text notifications if certain jobs are late, cause errors or fail data quality checks. You can even rerun the job from your phone if you want.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-5 col-lg-offset-1 features-text">
+                        <small><span class="brand-font">Slick</span>ETL</small>
+                        <h2>My binary data would be truncated?? </h2>
+                        <i class="fa fa-fire-extinguisher big-icon pull-right"></i>
+                        <p>
+                            With most ETL packages, if a job fails, you may spend hours trying to decrypt the error message or figure out which row in a 50MB file actually caused the problem. In many cases,
+                            we'll not only tell you exactly which row of data has issues, but which field and what the value was. You can fix the problem and rerun the job before your coffee gets cold.
+                        </p>
+                    </div>
+                    <div class="col-lg-5 features-text">
+                        <small><span class="brand-font">Slick</span>ETL</small>
+                        <h2>Job Chaining </h2>
+                        <i class="fa fa-link big-icon pull-right"></i>
+                        <p>
+                            For enterprise users it's possible to kick off jobs via an API. And you can easily design jobs to in turn post data to an API when they're done. You can even put a message in a
+                            queue that contains data from the job. With a little creativity, it's possible to stitch together complicated workflows that are easily triggered, monitored and supported.
+                        </p>
+                    </div>
+                </div>
+            </div>
 
-    <section class="features">
+        </section>
+
+    </div>
+
+    <section id="contact" class="gray-section contact">
         <div class="container">
-            <div class="row">
+            <div class="row m-b-lg">
                 <div class="col-lg-12 text-center">
                     <div class="navy-line"></div>
-                    <h1>Yep, we can do that!</h1>
-                    <p>Just because the system is easy to use doesn't mean it isn't powerful. These are a few of our favorite features available to advanced users.</p>
+                    <h1>Contact Us</h1>
+                    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-5 col-lg-offset-1 features-text">
-                    <small><span class="brand-font">Slick</span>ETL</small>
-                    <h2>Did you send me that spreadsheet?</h2>
-                    <i class="fa fa-envelope-square big-icon pull-right"></i>
-                    <p>
-                        The system can automatically monitor an IMAP or POP3 mailbox for emails matching certain criteria. That invoice or bank statement you get every Monday at 7 AM? We'll automatically
-                        load it into a database or reformat it and save it to your dropbox.
-                    </p>
+            <div class="row m-b-lg">
+                <div class="col-lg-3 col-lg-offset-3">
+                    <address>
+                        <strong><span class="navy">Company name, Inc.</span></strong><br />
+                        795 Folsom Ave, Suite 600<br />
+                        San Francisco, CA 94107<br />
+                        <abbr title="Phone">P:</abbr> (123) 456-7890
+                    </address>
                 </div>
-                <div class="col-lg-5 features-text">
-                    <small><span class="brand-font">Slick</span>ETL</small>
-                    <h2>I'm out of the office today </h2>
-                    <i class="fa fa-phone big-icon pull-right"></i>
-                    <p>
-                        You can subscribe to email or text notifications if certain jobs are late, cause errors or fail data quality checks. You can even rerun the job from your phone if you want.
+                <div class="col-lg-4">
+                    <p class="text-color">
+                        Consectetur adipisicing elit. Aut eaque, totam corporis laboriosam veritatis quis ad perspiciatis, totam corporis laboriosam veritatis, consectetur adipisicing elit quos non quis ad perspiciatis, totam corporis ea,
                     </p>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-5 col-lg-offset-1 features-text">
-                    <small><span class="brand-font">Slick</span>ETL</small>
-                    <h2>My binary data would be truncated?? </h2>
-                    <i class="fa fa-fire-extinguisher big-icon pull-right"></i>
-                    <p>
-                        With most ETL packages, if a job fails, you may spend hours trying to decrypt the error message or figure out which row in a 50MB file actually caused the problem. In many cases,
-                        we'll not only tell you exactly which row of data has issues, but which field and what the value was. You can fix the problem and rerun the job before your coffee gets cold.
+                <div class="col-lg-12 text-center">
+                    <a href="mailto:test@email.com" class="btn btn-primary">Send us mail</a>
+                    <p class="m-t-sm">
+                        Or follow us on social platform
                     </p>
+                    <ul class="list-inline social-icon">
+                        <li>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="col-lg-5 features-text">
-                    <small><span class="brand-font">Slick</span>ETL</small>
-                    <h2>Job Chaining </h2>
-                    <i class="fa fa-link big-icon pull-right"></i>
-                    <p>
-                        For enterprise users it's possible to kick off jobs via an API. And you can easily design jobs to in turn post data to an API when they're done. You can even put a message in a
-                        queue that contains data from the job. With a little creativity, it's possible to stitch together complicated workflows that are easily triggered, monitored and supported.
-                    </p>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center m-t-lg m-b-lg">
+                    <p><strong>&copy; 2015 Company Name</strong><br /> consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
                 </div>
             </div>
         </div>
-
     </section>
 
+    <script src="~/Theme/Landing/js/jquery-2.1.1.js"></script>
+    <script src="~/Theme/Landing/js/pace.min.js"></script>
+    <script src="~/Theme/Landing/js/bootstrap.min.js"></script>
+    <script src="~/Theme/Landing/js/classie.js"></script>
+    <script src="~/Theme/Landing/js/cbpAnimatedHeader.js"></script>
+    <script src="~/Theme/Landing/js/wow.min.js"></script>
+    <script src="~/Theme/Landing/js/inspinia.js"></script>
+
+
+    @Html.Partial("analytics")
+</body>
+</html>
