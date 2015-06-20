@@ -216,6 +216,18 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Images\logo.png" />
     <Content Include="Content\Images\title.png" />
+    <Content Include="Content\VendorLogos\advent.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\VendorLogos\bbg.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\VendorLogos\CRD.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\VendorLogos\markit.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
