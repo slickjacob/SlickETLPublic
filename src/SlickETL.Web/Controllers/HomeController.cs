@@ -10,8 +10,21 @@ namespace SlickETL.Web.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Title = "Home Page";
+            ViewBag.Title = "SlickETL";
+            return View();
+        }
 
+        [Route("Connectors")]
+        public ActionResult Connectors()
+        {
+            ViewBag.Title = "Connectors - SlickETL";
+            return View();
+        }
+
+        [Route("FAQ")]
+        public ActionResult FAQ()
+        {
+            ViewBag.Title = "FAQ - SlickETL";
             return View();
         }
     }
