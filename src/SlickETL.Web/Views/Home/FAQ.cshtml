@@ -1,14 +1,40 @@
 ﻿@{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+
+@section Styles{
+    <style>
+        ::-webkit-input-placeholder {
+            text-align: center;
+        }
+
+        :-moz-placeholder { /* Firefox 18- */
+            text-align: center;
+        }
+
+        ::-moz-placeholder { /* Firefox 19+ */
+            text-align: center;
+        }
+
+        :-ms-input-placeholder {
+            text-align: center;
+        }
+    </style>
+}
 <div class="row" id="page-wrapper">
     <div class="col-lg-12">
         <div class="wrapper wrapper-content animated fadeInRight">
 
             <div class="ibox-content m-b-sm border-bottom">
                 <div class="text-center p-lg">
-                    <h2>If you don't find the answer to your question</h2>
-                    please <a href="@Url.Action("Contact","Home")">send it to us</a> and we'll be sure it get it answered.
+                    <h2>
+                        <i class="fa fa-question-circle logo-name"></i><br />
+                        If you don't find the answer to your question
+                    </h2>
+                    please <a href="@Url.Action("Contact","Home")">send it to us</a> and we'll be sure it gets answered.
+                </div>
+                <div class="text-center">
+                    <input style="margin-left:25%;max-width:50%; " class="form-control" id="faq_search" placeholder="Type here to search the questions..." />
                 </div>
             </div>
 

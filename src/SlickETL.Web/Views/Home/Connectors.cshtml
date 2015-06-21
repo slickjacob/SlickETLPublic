@@ -1,101 +1,108 @@
 ﻿@{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<div class="container">
-    <div class="jumbotron">
-        <h1>Custom Connectors</h1>
-        <h3>We specialize in connectors for the financial services industry</h3>
-        <p>
-            Every ETL platform connects to common databases and file formats, and <span class="brand-font">Slick</span>ETL is optimized for this kind of general use.
-            However we also have some pre-built configurations that make it very quick to integrate with some standard off-the-shelf tools.
-            If you purchase one of our pre-built connectors one of our engineers will help you implement it.
-            And we're adding support for new systems all the time - if you don't see your platform below, <a href="@Url.Action("Contact","Home")">send us a note</a> and ask us if it's on the roadmap.
-        </p>
-        <button class="btn btn-xl btn-primary">Request a demo</button>
-    </div>
-    <div class="col-md-6">
-        <div class="ibox float-e-margins">
-            <div class="ibox-title">
-                <h5>
-                    <img src="~/Content/VendorLogos/advent.png" class="logo" />
-                    <strong>Advent</strong> APX <small class="m-l-sm">Portfolio accounting and reporting</small>
-                </h5>
+<div class="row" id="page-wrapper">
+    <div class="col-lg-12">
+        <div class="wrapper wrapper-content animated fadeInRight">
 
-            </div>
-            <div class="ibox-content">
-                <h2>
-                    This is standard IN+ Panel<br>
-                </h2>
+            <div class="jumbotron">
+                <h1><i class="fa fa-connectdevelop  logo-name pull-right"></i>Custom Integrations</h1>
+                <h3>We specialize in connectors for the financial services industry</h3>
                 <p>
-                    <strong>Lorem ipsum dolor</strong>
-                    Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                    Below are just a few of the systems with which our engineers can help you integrate quickly and easily.
+                    And we're building expertise in new systems all the time - if you don't see your platform below, <a href="@Url.Action("Contact","Home")">send us a note</a> and ask us for ideas.
                 </p>
-                <p>
-                    <small>
-                        Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.
-                    </small>
-                </p>
+                <button class="btn btn-xl btn-primary">Request a demo</button>
             </div>
-        </div>
-    </div>
+            <div class="col-md-12">
+                <div class="col-md-6">
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-title">
+                            <h5>
+                                <img src="~/Content/VendorLogos/advent.png" class="logo" />
+                                <strong>Advent</strong> APX <small class="m-l-sm">Portfolio accounting and reporting</small>
+                            </h5>
+
+                        </div>
+                        <div class="ibox-content">
+                            <h2>
+                                IMEX is not the enemy!<br>
+                            </h2>
+                            <p>
+                                We've done the legwork to easily generate trn files from your own trading systems or tables. And with support for managing job concurrency, <span class="brand-font">Slick</span>ETL
+                                can prevent you from having to build your own complicated infrastructure around APX in order to scale without conflicts. Whether you're loading securities, prices, portfolios or trades,
+                                we can help you integrate with APX in a way that doesn't cause headaches.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
 
 
-    <div class="col-md-6">
-        <div class="ibox float-e-margins">
-            <div class="ibox-title">
-                <h5>
-                    <img src="~/Content/VendorLogos/CRD.jpg" class="logo" />
-                    <strong>Charles River</strong> Investment Management System
-                </h5>
+                <div class="col-md-6">
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-title">
+                            <h5>
+                                <img src="~/Content/VendorLogos/CRD.jpg" class="logo" />
+                                <strong>Charles River</strong> <small class="m-l-sm">Investment Management System</small>
+                            </h5>
 
+                        </div>
+                        <div class="ibox-content">
+                            <p>
+                                CRD is a leading buy-side OMS, but you no longer need custom applications to get your data into and out of the system. <span class="brand-font">Slick</span>ETL
+                                can load all your data, kick of start-of-day processes, and provide full transparency / rerun ability should anything go wrong. Then we can monitor tables or the web service
+                                on a schedule to export anything you've sent to accounting. We can make CRD feel like a natural connection to your upstream and downstream systems.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="ibox-content">
-                <h2>
-                    This is standard IN+ Panel<br>
-                </h2>
-                <p>
-                    <strong>Lorem ipsum dolor</strong>
-                    Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-                </p>
-                <p>
-                    <small>
-                        Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.
-                    </small>
-                </p>
-            </div>
-        </div>
-    </div>
+            <div class="col-md-12">
+                <div class="col-md-6">
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-title">
+                            <h5>
+                                <img src="~/Content/VendorLogos/bbg.png" style="height:20px;" />
+                                <small class="m-l-sm">AIM and back-office files</small>
+                            </h5>
 
-    <div class="col-md-6">
-        <div class="ibox float-e-margins">
-            <div class="ibox-title">
-                <h5>
-                    <img src="~/Content/VendorLogos/bbg.png" style="height:20px;" />
-                    <small class="m-l-sm">AIM and back-office files</small>
-                </h5>
+                        </div>
+                        <div class="ibox-content">
+                            <p>
+                                <strong>Nearly every firm in the industry</strong> uses bloomberg for something, and we can make their data feel just a little more accessible. 
+                                <span class="brand-font">Slick</span>ETL has out-of-the-box features for downloading/decrypting back-office files, and loading them into your EDM platform 
+                                or proprietary systems. And if you use Bloomberg AIM, we have tools that complement their own data integration tools to complete the links to your downstream systems.
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="col-md-6">
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-title">
+                            <h5>
+                                <img src="~/Content/VendorLogos/ms_gp.png" style="height:20px;" />
+                                <small class="m-l-sm">GP</small>
+                            </h5>
+
+                        </div>
+                        <div class="ibox-content">
+                            If you're getting files from your clients, vendors or partners that you need loaded into Dynamics, <span class="brand-font">Slick</span>ETL is the easiest way to 
+                            get it done. Our tools manage the entire workflow from once the file hits your network or inbox, until the data is verified and processed. 
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="ibox-content">
-                <h2>
-                    This is standard IN+ Panel<br>
-                </h2>
-                <p>
-                    <strong>Lorem ipsum dolor</strong>
-                    Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-                </p>
-                <p>
-                    <small>
-                        Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.
-                    </small>
-                </p>
+
+
+            <div class="col-md-12">
+                <div class="well">
+                    All product names, logos, and brands are property of their respective owners. All company, product and
+                    service names used in this website are for identification purposes only. Use of these names, logos, and
+                    brands does not imply endorsement.
+                </div>
             </div>
-        </div>
-    </div>
-    <div class="col-md-12">
-        <div class="well">
-            All product names, logos, and brands are property of their respective owners. All company, product and
-            service names used in this website are for identification purposes only. Use of these names, logos, and
-            brands does not imply endorsement.
         </div>
     </div>
 </div>
