@@ -1,0 +1,65 @@
+﻿@model SlickETL.Web.Models.ContactModel
+
+<div class="container" id="page-wrapper">
+    <h1>This is a contact page</h1>
+
+    @using (Html.BeginForm("Confirm", "Contact", FormMethod.Post))
+    {
+        @Html.AntiForgeryToken()
+        <div class="form-group">
+            <label>Last Name</label> @Html.ValidationMessageFor(m => m.Email)
+            @Html.EditorFor(m => m.Email, new { @class = "form-control" })
+        </div>
+
+        <div class="form-group">
+            <label>Last Name</label> @Html.ValidationMessageFor(m => m.FirstName)
+            @Html.EditorFor(m => m.FirstName, new { @class = "form-control" })
+        </div>
+
+        <div class="form-group">
+            <label>Last Name</label> @Html.ValidationMessageFor(m => m.LastName)
+            @Html.EditorFor(m => m.LastName, new { @class = "form-control" })
+        </div>
+
+        <div class="form-group">
+            <label>Company</label>
+            <input type="text" placeholder="Company" class="form-control" name="Company">
+        </div>
+        <div class="form-group">
+            <label>Subscribe to updates about our launch and feature availability</label><br />
+            <input type="checkbox" name="Subscribe" class="i-checks" checked value="true" /> <small><em class="text-muted">(Don't worry, we hate spam as much as yo do.)</em></small>
+
+        </div>
+        <div class="form-group">
+            <label>Message / Question / Comments <small class="text-muted">(optional)</small></label>
+            <textarea placeholder="Message / Question / Comments" class="form-control" name="Message"></textarea>
+        </div>
+        <input type="hidden" value="@ViewBag.Hook" name="Hook" />
+
+        <button class="btn btn-sm btn-primary m-t-n-xs" type="submit"><strong>Submit</strong></button>
+    }
+
+</div>
+
+@section Styles {
+    <link href="~/Theme/Layout2/Content/plugins/iCheck/custom.css" rel="stylesheet" />
+    <style>
+        .field-validation-error {
+            color: red;
+        }
+    </style>
+}
+@section Scripts {
+
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/Theme/Layout2/Scripts/plugins/iCheck/icheck.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.i-checks').iCheck({
+                checkboxClass: 'icheckbox_square-green',
+                radioClass: 'iradio_square-green',
+            });
+        });
+    </script>
+}
