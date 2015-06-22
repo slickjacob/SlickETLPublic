@@ -8,7 +8,7 @@
                 <div class="ibox-title text-center">
 
                     <h1>
-                        <i class="fa fa-rocket logo-name-small"></i><br/>
+                        <i class="fa fa-rocket logo-name-small"></i><br />
                         We're almost ready!
                     </h1>
                     <p>We're anticipating a public launch in early fall 2015. In the meantime we're happy to go ahead and schedule a demo, and we'd love to keep you up to date on our news.</p>
@@ -20,7 +20,7 @@
                         @Html.AntiForgeryToken()
                         <div class="form-group">
                             <span class="text-danger">*</span><label>Email</label> @Html.ValidationMessageFor(m => m.Email)
-                            @Html.EditorFor(m => m.Email, new { @class = "form-control", @placeholder="Email" })
+                            @Html.EditorFor(m => m.Email, new { @class = "form-control", @placeholder = "Email" })
                         </div>
 
                         <div class="form-group">
@@ -37,18 +37,22 @@
                             <label>Company</label>
                             <input type="text" placeholder="Company" class="form-control" name="Company">
                         </div>
-                        <div class="form-group">
-                            <label>Subscribe to updates about our launch and feature availability</label><br />
-                            <input type="checkbox" name="Subscribe" class="i-checks" checked value="true" /> <small><em class="text-muted">(Don't worry, we hate spam as much as yo do.)</em></small>
 
-                        </div>
                         <div class="form-group">
                             <label>Message / Question / Comments <small class="text-muted">(optional)</small></label>
                             <textarea placeholder="Message / Question / Comments" class="form-control" name="Message"></textarea>
                         </div>
                         <input type="hidden" value="@ViewBag.Hook" name="Hook" />
 
-                        <button class="btn btn-sm btn-primary m-t-n-xs" type="submit"><strong>Submit</strong></button>
+                        <div class="form-group">
+                            <label>Subscribe to updates about our launch and feature availability</label><br />
+                            <input type="checkbox" name="Subscribe" class="i-checks" checked value="true" /> <small><em class="text-muted">(Don't worry, we hate spam as much as yo do.)</em></small>
+
+                        </div>
+
+                        <div class="g-recaptcha" data-callback="captchaCompleted" data-sitekey="6LdXrggTAAAAAAb68jHqQbHo24DxKwq92xIdvRk6"></div><br/>
+
+                        <button id="submitContact" class="btn btn-sm btn-primary m-t-n-xs disabled" type="submit"><strong>Submit</strong> <small id="recaptchaWarning"><em>(Pending reCaptcha)</em></small></button>
                     }
                 </div>
             </div>
@@ -65,7 +69,14 @@
     </style>
 }
 @section Scripts {
-
+    <script>
+        var captchaCompleted = function (resp) {
+            $("#submitContact").removeClass("disabled");
+            $("#recaptchaWarning").remove();
+            console.log(resp);
+        };
+    </script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
     <script src="~/Scripts/jquery.validate.min.js"></script>
     <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
     <script src="~/Theme/Layout2/Scripts/plugins/iCheck/icheck.min.js"></script>
