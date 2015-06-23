@@ -1,63 +1,65 @@
 ﻿@model SlickETL.Web.Models.ContactModel
 
 <div id="page-wrapper">
-    <div class="row ">
-        <div class="col-lg-3"></div>
-        <div class="col-lg-6">
-            <div class="ibox">
-                <div class="ibox-title text-center">
+    <div class="col-lg-12">
+        <div class="wrapper wrapper-content animated fadeInRight">
+            <div class="col-lg-3"></div>
+            <div class="col-lg-6">
+                <div class="ibox">
+                    <div class="ibox-title text-center">
 
-                    <h1>
-                        <i class="fa fa-rocket logo-name-small"></i><br />
-                        We're almost ready!
-                    </h1>
-                    <p>We're anticipating a public launch in early fall 2015. In the meantime we're happy to go ahead and schedule a demo, and we'd love to keep you up to date on our news.</p>
-                    <p>If you want to subscribe to our updates without sending a message, just leave the message box blank.</p>
-                </div>
-                <div class="ibox-content">
-                    @using (Html.BeginForm("Confirm", "Contact", FormMethod.Post))
-                    {
-                        @Html.AntiForgeryToken()
-                        <div class="form-group">
-                            <span class="text-danger">*</span><label>Email</label> @Html.ValidationMessageFor(m => m.Email)
-                            @Html.EditorFor(m => m.Email, new { @class = "form-control", @placeholder = "Email" })
-                        </div>
+                        <h1>
+                            <i class="fa fa-rocket logo-name-small"></i><br />
+                            We're almost ready!
+                        </h1>
+                        <p>We're anticipating a public launch in early fall 2015. In the meantime we're happy to go ahead and schedule a demo, and we'd love to keep you up to date on our news.</p>
+                        <p>If you want to subscribe to our updates without sending a message, just leave the message box blank.</p>
+                    </div>
+                    <div class="ibox-content">
+                        @using (Html.BeginForm("Confirm", "Contact", FormMethod.Post))
+                        {
+                            @Html.AntiForgeryToken()
+                            <div class="form-group">
+                                <span class="text-danger">*</span><label>Email</label> @Html.ValidationMessageFor(m => m.Email)
+                                @Html.EditorFor(m => m.Email, new { @class = "form-control", @placeholder = "Email" })
+                            </div>
 
-                        <div class="form-group">
-                            <span class="text-danger">*</span><label>First Name</label> @Html.ValidationMessageFor(m => m.FirstName)
-                            @Html.EditorFor(m => m.FirstName, new { @class = "form-control", @placeholder = "First Name" })
-                        </div>
+                            <div class="form-group">
+                                <span class="text-danger">*</span><label>First Name</label> @Html.ValidationMessageFor(m => m.FirstName)
+                                @Html.EditorFor(m => m.FirstName, new { @class = "form-control", @placeholder = "First Name" })
+                            </div>
 
-                        <div class="form-group">
-                            <span class="text-danger">*</span><label>Last Name</label> @Html.ValidationMessageFor(m => m.LastName)
-                            @Html.EditorFor(m => m.LastName, new { @class = "form-control", @placeholder = "Last Name" })
-                        </div>
+                            <div class="form-group">
+                                <span class="text-danger">*</span><label>Last Name</label> @Html.ValidationMessageFor(m => m.LastName)
+                                @Html.EditorFor(m => m.LastName, new { @class = "form-control", @placeholder = "Last Name" })
+                            </div>
 
-                        <div class="form-group">
-                            <label>Company</label>
-                            <input type="text" placeholder="Company" class="form-control" name="Company">
-                        </div>
+                            <div class="form-group">
+                                <label>Company</label>
+                                <input type="text" placeholder="Company" class="form-control" name="Company">
+                            </div>
 
-                        <div class="form-group">
-                            <label>Message / Question / Comments <small class="text-muted">(optional)</small></label>
-                            <textarea placeholder="Message / Question / Comments" class="form-control" name="Message"></textarea>
-                        </div>
-                        <input type="hidden" value="@ViewBag.Hook" name="Hook" />
+                            <div class="form-group">
+                                <label>Message / Question / Comments <small class="text-muted">(optional)</small></label>
+                                <textarea placeholder="Message / Question / Comments" class="form-control" name="Message"></textarea>
+                            </div>
+                            <input type="hidden" value="@ViewBag.Hook" name="Hook" />
 
-                        <div class="form-group">
-                            <label>Subscribe to updates about our launch and feature availability</label><br />
-                            <input type="checkbox" name="Subscribe" class="i-checks" checked value="true" /> <small><em class="text-muted">(Don't worry, we hate spam as much as yo do.)</em></small>
+                            <div class="form-group">
+                                <label>Subscribe to updates about our launch and feature availability</label><br />
+                                <input type="checkbox" name="Subscribe" class="i-checks" checked value="true" /> <small><em class="text-muted">(Don't worry, we hate spam as much as yo do.)</em></small>
 
-                        </div>
+                            </div>
 
-                        <div class="g-recaptcha" data-callback="captchaCompleted" data-sitekey="6LdXrggTAAAAAAb68jHqQbHo24DxKwq92xIdvRk6"></div><br/>
+                            <div class="g-recaptcha" data-callback="captchaCompleted" data-sitekey="6LdXrggTAAAAAAb68jHqQbHo24DxKwq92xIdvRk6"></div><br />
 
-                        <button id="submitContact" class="btn btn-sm btn-primary m-t-n-xs disabled" type="submit"><strong>Submit</strong> <small id="recaptchaWarning"><em>(Pending reCaptcha)</em></small></button>
-                    }
+                            <button id="submitContact" class="btn btn-sm btn-primary m-t-n-xs disabled" type="submit"><strong>Submit</strong> <small id="recaptchaWarning"><em>(Pending reCaptcha)</em></small></button>
+                        }
+                    </div>
                 </div>
             </div>
+            <div class="col-lg-3"></div>
         </div>
-        <div class="col-lg-3"></div>
     </div>
 </div>
 @section Styles {

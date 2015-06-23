@@ -94,6 +94,7 @@ namespace SlickETL.Web.Controllers
             catch (Exception ex)
             {
                 Trace.TraceError("Error occurred on the contact page: {0}. {1}", ex.Message, ex.StackTrace);
+                ViewBag.Title = "Contact Error - SlickETL";
                 return View("ContactError");
             }
         }
