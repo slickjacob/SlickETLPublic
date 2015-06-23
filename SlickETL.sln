@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SlickETL.Web", "src\SlickETL.Web\SlickETL.Web.csproj", "{9DC460EA-1DE2-4A41-9530-B5179D3BAC9A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SlickETL.Tests", "src\SlickETL.Tests\SlickETL.Tests.csproj", "{7CD30029-6F2D-47B1-A82F-9A881A5551A9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,6 +20,12 @@ Global
 		{9DC460EA-1DE2-4A41-9530-B5179D3BAC9A}.Production|Any CPU.Build.0 = Production|Any CPU
 		{9DC460EA-1DE2-4A41-9530-B5179D3BAC9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9DC460EA-1DE2-4A41-9530-B5179D3BAC9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CD30029-6F2D-47B1-A82F-9A881A5551A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CD30029-6F2D-47B1-A82F-9A881A5551A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CD30029-6F2D-47B1-A82F-9A881A5551A9}.Production|Any CPU.ActiveCfg = Release|Any CPU
+		{7CD30029-6F2D-47B1-A82F-9A881A5551A9}.Production|Any CPU.Build.0 = Release|Any CPU
+		{7CD30029-6F2D-47B1-A82F-9A881A5551A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CD30029-6F2D-47B1-A82F-9A881A5551A9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

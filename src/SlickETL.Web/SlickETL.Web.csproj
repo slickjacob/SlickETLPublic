@@ -243,6 +243,7 @@
     <Compile Include="Providers\ApplicationOAuthProvider.cs" />
     <Compile Include="Results\ChallengeResult.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="Utility\Email.cs" />
     <Compile Include="Utility\ReCaptcha.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -1004,6 +1005,7 @@
     <Content Include="Views\Shared\analytics.cshtml" />
     <Content Include="Views\Contact\Index.cshtml" />
     <Content Include="Views\Contact\ConfirmContact.cshtml" />
+    <Content Include="Views\Contact\ContactError.cshtml" />
     <None Include="Web.Production.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
