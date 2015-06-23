@@ -1006,6 +1006,7 @@
     <Content Include="Views\Contact\Index.cshtml" />
     <Content Include="Views\Contact\ConfirmContact.cshtml" />
     <Content Include="Views\Contact\ContactError.cshtml" />
+    <Content Include="Views\Home\Features.cshtml" />
     <None Include="Web.Production.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

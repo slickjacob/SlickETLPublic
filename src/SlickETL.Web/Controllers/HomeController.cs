@@ -27,5 +27,12 @@ namespace SlickETL.Web.Controllers
             ViewBag.Title = "FAQ - SlickETL";
             return View();
         }
+
+        [Route("Features")]
+        public ActionResult Features()
+        {
+            ViewBag.Title = "Features - SlickETL";
+            return View();
+        }
     }
 }
