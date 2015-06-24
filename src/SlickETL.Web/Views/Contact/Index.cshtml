@@ -53,7 +53,13 @@
 
                             <div class="g-recaptcha" data-callback="captchaCompleted" data-sitekey="6LdXrggTAAAAAAb68jHqQbHo24DxKwq92xIdvRk6"></div><br />
 
-                            <button id="submitContact" class="btn btn-sm btn-primary m-t-n-xs disabled" type="submit"><strong>Submit</strong> <small id="recaptchaWarning"><em>(Pending reCaptcha)</em></small></button>
+                            <button id="submitContact" class="btn btn-sm btn-primary m-t-n-xs disabled" type="submit">
+                                <strong>Submit</strong>
+                                <i id="submitSpinner" class="fa fa-spin fa-spinner hidden"></i>
+                                <small id="recaptchaWarning">
+                                    <em>(Pending reCaptcha)</em>
+                                </small>
+                            </button>
                         }
                     </div>
                 </div>
@@ -87,6 +93,10 @@
             $('.i-checks').iCheck({
                 checkboxClass: 'icheckbox_square-green',
                 radioClass: 'iradio_square-green',
+            });
+            $("#submitContact").click(function () {
+                $("#submitContact").addClass("disabled");
+                $("#submitSpinner").removeClass("hidden");
             });
         });
     </script>
