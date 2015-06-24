@@ -147,13 +147,13 @@ h1 {
   background-size: 100% 100%;
 }
 .header-back.one {
-  background: url('../img/header_two.jpg') 50% 0 no-repeat;
+  background: url('../img/cityStreetSmall.jpg') 50% 0 no-repeat;
 }
 .header-back.two {
-  background: url('../img/header_two.jpg') 50% 0 no-repeat;
+  background: url('../img/blueBuilding.jpg') 50% 0 no-repeat;
 }
 .header-back.three {
-  background: url('../img/header_two.jpg') 50% 0 no-repeat;
+  background: url('../img/street.jpg') 50% 0 no-repeat;
 }
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
