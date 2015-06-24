@@ -24,6 +24,7 @@ namespace SlickETL.Web.Controllers
         [Route("Contact")]
         public ActionResult Index(string req = null)
         {
+            ViewBag.Description = "Send us an email or subscribe to our updates";
             //log the request
             if (req != null)
             {

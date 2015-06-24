@@ -10,7 +10,7 @@ namespace SlickETL.Web.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Title = "SlickETL";
+            ViewBag.Title = "SlickETL - ETL for people who want to work smarter, not harder";
             return View();
         }
 
@@ -18,6 +18,7 @@ namespace SlickETL.Web.Controllers
         public ActionResult Connectors()
         {
             ViewBag.Title = "Connectors - SlickETL";
+            ViewBag.Description = "Info about some available connectors and custom integrations with SlickETL";
             return View();
         }
 
@@ -25,6 +26,7 @@ namespace SlickETL.Web.Controllers
         public ActionResult FAQ()
         {
             ViewBag.Title = "FAQ - SlickETL";
+            ViewBag.Description = "Answers to all of your questions about the cool features of SlickETL";
             return View();
         }
 
@@ -32,6 +34,7 @@ namespace SlickETL.Web.Controllers
         public ActionResult Features()
         {
             ViewBag.Title = "Features - SlickETL";
+            ViewBag.Description = "Overview of the cool features in SlickETL";
             return View();
         }
     }
