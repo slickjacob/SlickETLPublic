@@ -10,7 +10,7 @@ namespace SlickETL.Web.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Title = "SlickETL - ETL for people who want to work smarter, not harder";
+            ViewBag.Title = "SlickETL - For people who want to work smarter, not harder";
             return View();
         }
 
