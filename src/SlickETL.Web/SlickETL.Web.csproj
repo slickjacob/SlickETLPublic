@@ -341,6 +341,9 @@
     <Content Include="Theme\Landing\img\avatar8.jpg" />
     <Content Include="Theme\Landing\img\avatar9.jpg" />
     <Content Include="Theme\Landing\img\avatar_all.png" />
+    <Content Include="Theme\Landing\img\cityStreetSmall.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Theme\Landing\img\dashboard.png" />
     <Content Include="Theme\Landing\img\header_one.jpg" />
     <Content Include="Theme\Landing\img\header_one_orig.jpg" />
