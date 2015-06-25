@@ -1,5 +1,5 @@
 ﻿@section Styles{
-<link href="~/Theme/Landing/css/style.css" rel="stylesheet" />
+    <link href="~/Theme/Landing/css/style.css" rel="stylesheet" />
 }
 
 <div class="row" id="page-wrapper">
@@ -14,7 +14,7 @@
                     </h2>
                     <a class="btn btn-large btn-primary" href="@Url.Action("Index","Contact",new {req="worksmarter"})">&raquo; Start working smarter today.</a>
                 </div>
-            </div>  
+            </div>
         </div>
     </div>
     <section class="features">
@@ -29,28 +29,19 @@
             </div>
             <div class="row features-block">
                 <div class="col-lg-3 features-text wow fadeInLeft">
-                    <small>ENTERPRISE</small>
-                    <h2>Supportable / Scalable / Auditable </h2>
-                    <p>
-                        <span class="brand-font">Slick</span>ETL can handle nearly any data integration challenge you're facing. It can be used via SaaS, or installed on-premise.
-                        The dataflow designer has built-in change tracking and access control. Custom data quality rules can trigger mobile alerts and notifications. Built-in job and server
-                        monitoring will have your support team begging you to use this tool. And it scales beautifully: the more you put on this system, the more benefit you get out of it.
-                    </p>
-                    <a href="" class="btn btn-primary">See more features</a>
+                    <small>INTEGRATED</small>
+                    <p> Web based designer means no more dealing with expensive licenses or version updates for every user</p>
+                    <p> Web based UI can run on any client operating system or device with a modern browser</p>
+                    <p> Activate jobs without having to manage custom server deployments and without additional configuration dependencies</p>
                 </div>
                 <div class="col-lg-6 text-center m-t-n-lg wow zoomIn">
-                    @*<img src="~/Theme/Landing/img/iphone.jpg" class="img-responsive" alt="dashboard">*@
                     <img src="~/Theme/Landing/img/laptop.png" alt="laptop" />
                 </div>
                 <div class="col-lg-3 features-text text-right wow fadeInRight">
-                    <small>SIMPLICITY</small>
-                    <h2>Accessible / Intuitive / Automatic </h2>
-                    <p>
-                        The integrated designer/runner means you don't have to know 5 different languages to deploy and manage an ETL job. The system is easily piloted by people who just want
-                        to move data around and not spend their days debugging opaque error messages about package encryption and server compatibility. Detailed, readable logs will tell you exactly
-                        what went wrong, if anything does.
-                    </p>
-                    <a class="btn btn-lg btn-primary" href="@Url.Action("Index","Contact",new {req="proveit"})" role="button">Let us prove it</a>
+                    <small>SCALE</small>
+                    <p> Our architecture allows you easily manage thousands of jobs</p>
+                    <p> Group jobs and manage concurrency at the job level OR the group level</p>
+                    <p> Custom security and separation of concerns allows multiple team members and roles to share the same system without conflict</p>
                 </div>
             </div>
         </div>
@@ -60,71 +51,34 @@
     <section id="features" class="container services">
         <div class="row">
             <div class="col-sm-3">
-                <h2>WATCH...</h2>
-                <p>a folder or an FTP site for a new file that matches a naming convention. Automatically archive/rename it and import it into a database when it shows up.</p>
-                <p><span class="navy"><i class="fa fa-check"></i> Setup in about 10 minutes </span></p>
+                <h2>SUPPORTABILITY MATTERS</h2>
+                <p>
+                    The best system in the world is useless if your people don't know how to use it. Which is why we have tons of short videos showing how to perform
+                    common tasks in the system. And our 'cookbook' - tips and tricks for doing some really cool advanced problem solving with the tool.
+                </p>
             </div>
             <div class="col-sm-3">
-                <h2>SCHEDULE...</h2>
-                <p>the results of a query to be copied to a different database, either on-premise or in the cloud.</p>
-                <p><span class="navy"><i class="fa fa-check"></i>  Idea to done as quick as 5 minutes </span></p>
+                <h2>FLEXIBLE ARCHITECTURE</h2>
+                <p>
+                    You can run <span class="brand-font">Slick</span>ETL from the cloud, or install it on your own servers. Using our cloud service guarantees you always
+                    have the latest updates. Installing on-premise gives you complete control over the hardware and network.
+                </p>
             </div>
             <div class="col-sm-3">
-                <h2>EXPORT...</h2>
-                <p>the results of a query to a file on disk or on an FTP site, either on demand OR on a schedule.</p>
-                <p><span class="navy"><i class="fa fa-check"></i>  Up and running as fast as you can write the query </span></p>
+                <h2>ANALYTICS</h2>
+                <p>
+                    Built in metrics allow you to easily visualize statistics for everything in the system. Easily identify which jobs/groups are frequently late, cause errors, or take
+                    too long to run. Our analytics are targeted at helping you evolve towards a more stable platform over time.
+                </p>
             </div>
             <div class="col-sm-3">
-                <h2>RUN...</h2>
-                <p>any kind of procs, scripts, web hooks or reports after the job is finished.</p>
-                <p><span class="navy"><i class="fa fa-check"></i>  With just a few clicks </span></p>
+                <h2>ENRICH AND VERIFY DATA</h2>
+                <p>
+                    Easily add metadata about your job - file names, run times, row counts, audit fields. Write custom rules against any data in your job to trigger
+                    failures or notifications if certain criteria are met. 
+                </p>
             </div>
         </div>
-    </section>
-
-    <section class="features">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5 col-lg-offset-1 features-text">
-                    <small><span class="brand-font">Slick</span>ETL</small>
-                    <h2>Did you send me that spreadsheet?</h2>
-                    <i class="fa fa-envelope-square big-icon pull-right"></i>
-                    <p>
-                        The system can automatically monitor an IMAP or POP3 mailbox for emails matching certain criteria. That invoice or bank statement you get every Monday at 7 AM? We'll automatically
-                        load it into a database or reformat it and save it to your dropbox.
-                    </p>
-                </div>
-                <div class="col-lg-5 features-text">
-                    <small><span class="brand-font">Slick</span>ETL</small>
-                    <h2>I'm out of the office today </h2>
-                    <i class="fa fa-phone big-icon pull-right"></i>
-                    <p>
-                        You can subscribe to email or text notifications if certain jobs are late, cause errors or fail data quality checks. You can even rerun the job from your phone if you want.
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-5 col-lg-offset-1 features-text">
-                    <small><span class="brand-font">Slick</span>ETL</small>
-                    <h2>My binary data would be truncated?? </h2>
-                    <i class="fa fa-fire-extinguisher big-icon pull-right"></i>
-                    <p>
-                        With most ETL packages, if a job fails, you may spend hours trying to decrypt the error message or figure out which row in a 50MB file actually caused the problem. In many cases,
-                        we'll not only tell you exactly which row of data has issues, but which field and what the value was. You can fix the problem and rerun the job before your coffee gets cold.
-                    </p>
-                </div>
-                <div class="col-lg-5 features-text">
-                    <small><span class="brand-font">Slick</span>ETL</small>
-                    <h2>Job Chaining </h2>
-                    <i class="fa fa-link big-icon pull-right"></i>
-                    <p>
-                        For enterprise users it's possible to kick off jobs via an API. And you can easily design jobs to in turn post data to an API when they're done. You can even put a message in a
-                        queue that contains data from the job. With a little creativity, it's possible to stitch together complicated workflows that are easily triggered, monitored and supported.
-                    </p>
-                </div>
-            </div>
-        </div>
-
     </section>
 
     <section class="features" style="margin-bottom:100px;">
@@ -140,28 +94,38 @@
             </div>
             <div class="row features-block">
                 <div class="col-lg-3 features-text wow fadeInLeft">
-                    <small>ENTERPRISE</small>
-                    <h2>Supportable / Scalable / Auditable </h2>
+                    <small>TRANSPARENT</small>
                     <p>
-                        <span class="brand-font">Slick</span>ETL can handle nearly any data integration challenge you're facing. It can be used via SaaS, or installed on-premise.
-                        The dataflow designer has built-in change tracking and access control. Custom data quality rules can trigger mobile alerts and notifications. Built-in job and server
-                        monitoring will have your support team begging you to use this tool. And it scales beautifully: the more you put on this system, the more benefit you get out of it.
+                        Easily subscribe to text or email notifications of any event in the system... job failures, data quality failures, missing files. You'll never have
+                        to wonder what's going on in the system.
                     </p>
-                    <a href="" class="btn btn-primary">See more features</a>
+                    <p>
+                        Row level error messages and verbose logging will never leave you guessing why something failed. Immediately find what piece of data caused an error
+                        so you can get back to more important things.
+                    </p>
+                    <p>
+                        Built-in change history makes it easy to see when job configurations changed, and what was altered. You won't have to cross-reference source control, package stores,
+                        and deployment logs and wonder whether you're actually debugging the right version.
+                    </p>
                 </div>
                 <div class="col-lg-6 text-center m-t-n-lg wow zoomIn">
                     @*<img src="~/Theme/Landing/img/iphone.jpg" class="img-responsive" alt="dashboard">*@
                     <img style="max-height:450px;" src="~/Content/Images/textalert.png" />
                 </div>
                 <div class="col-lg-3 features-text text-right wow fadeInRight">
-                    <small>SIMPLICITY</small>
-                    <h2>Accessible / Intuitive / Automatic </h2>
+                    <small>OPTIMIZED FOR THE REAL WORLD</small>
                     <p>
-                        The integrated designer/runner means you don't have to know 5 different languages to deploy and manage an ETL job. The system is easily piloted by people who just want
-                        to move data around and not spend their days debugging opaque error messages about package encryption and server compatibility. Detailed, readable logs will tell you exactly
-                        what went wrong, if anything does.
+                        The system knows you want to run most of your jobs after certain events: a file shows up, a scheduled time passes, another job completes. You'll be surprised how easy and 
+                        flexible it is to configure these job triggers.
                     </p>
-                    <a class="btn btn-lg btn-primary" href="@Url.Action("Index","Contact",new {req="proveit"})" role="button">Let us prove it</a>
+                    <p>
+                        Using a classic ETL platform to load a text file into a database is kind of like using a Boeing 747 for your daily commute. <span class="brand-font">Slick</span>ETL is 
+                        optimized for simplicity and speed around the most common real-world use cases. 
+                    </p>
+                    <p>
+                        We know you'd rather spend more time analyzing and processing your data than moving it around. Our platform can make your company more
+                        profitable by giving you more time work on the things your customers need.
+                    </p>
                 </div>
             </div>
         </div>

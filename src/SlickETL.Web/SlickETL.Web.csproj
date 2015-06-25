@@ -253,6 +253,7 @@
     <Content Include="Content\Images\grayscale_logo.png" />
     <Content Include="Content\Images\logo.png" />
     <Content Include="Content\Images\off_colors_transparent_logo.png" />
+    <Content Include="Content\Images\textalert.png" />
     <Content Include="Content\Images\title.png" />
     <Content Include="Content\VendorLogos\advent.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
