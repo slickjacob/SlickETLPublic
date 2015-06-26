@@ -25,6 +25,10 @@
     @if (IsSectionDefined("Styles"))
     {@RenderSection("Styles", required: false)}
 
+    @if (Boolean.Parse(System.Configuration.ConfigurationManager.AppSettings["DoAnalytics"]))
+    {
+        @Html.Partial("analytics")
+    }
 </head>
 <body class="top-navigation">
     <!-- Wrapper-->
@@ -56,10 +60,7 @@
     <script src="~/Theme/Layout2/Scripts/plugins/metisMenu/metisMenu.min.js"></script>
     <script src="~/Theme/Layout2/Scripts/plugins/pace/pace.min.js"></script>
     <script src="~/Theme/Layout2/Scripts/app/inspinia.min.js"></script>
-    @if (Boolean.Parse(System.Configuration.ConfigurationManager.AppSettings["GoogleAnalytics"]))
-    {
-        @Html.Partial("analytics")
-    }
+  
 
     <!-- Handler for local scripts -->
     @RenderSection("scripts", required: false)
