@@ -193,8 +193,7 @@
                         <a href="" class="btn btn-primary">See more features</a>
                     </div>
                     <div class="col-lg-6 text-right m-t-n-lg wow zoomIn">
-                        @*<img src="~/Theme/Landing/img/iphone.jpg" class="img-responsive" alt="dashboard">*@
-                        <img src="~/Theme/Landing/img/laptop.png" alt="laptop" />
+                        <img src="~/Theme/Landing/img/laptop.png" style="max-width:100%;" alt="laptop" />
                     </div>
                     <div class="col-lg-3 features-text text-right wow fadeInRight">
                         <small>SIMPLICITY</small>
@@ -420,6 +419,8 @@
     <script src="~/Theme/Landing/js/wow.min.js"></script>
     <script src="~/Theme/Landing/js/inspinia.js"></script>
 
-    @Html.Partial("analytics")
+    @if (Boolean.Parse(System.Configuration.ConfigurationManager.AppSettings["GoogleAnalytics"])) { 
+        @Html.Partial("analytics")
+    }
 </body>
 </html>
