@@ -8,10 +8,7 @@
     <meta name="description" content="@ViewBag.Description" />
     <title>@ViewBag.Title</title>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
-    <!-- Add local styles, mostly for plugins css file -->
-    @if (IsSectionDefined("Styles"))
-        {@RenderSection("Styles", required: false)}
-     
+
     <!-- Add jQuery Style direct - used for jQGrid plugin -->
     <link href="@Url.Content("~/Theme/Layout2/Scripts/plugins/jquery-ui/jquery-ui.css")" rel="stylesheet" type="text/css" />
 
@@ -23,6 +20,11 @@
 
     <link href="~/Content/Site.css" rel="stylesheet" />
     <script src="~/Scripts/appInsights.js"></script>
+
+    <!-- Add local styles, mostly for plugins css file -->
+    @if (IsSectionDefined("Styles"))
+    {@RenderSection("Styles", required: false)}
+
 </head>
 <body class="top-navigation">
     <!-- Wrapper-->
