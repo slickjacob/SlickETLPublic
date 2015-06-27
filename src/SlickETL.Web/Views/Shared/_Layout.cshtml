@@ -33,7 +33,9 @@
 <body class="top-navigation">
     <!-- Wrapper-->
     <!-- PageClass give you ability to specify custom style for specific view based on action -->
-    <div id="wrapper" @*class="@Html.PageClass()"*@>
+    <div id="wrapper" @*class="@Html.PageClass()"*@ itemscope itemtype="http://schema.org/SoftwareApplication">
+        <meta itemprop="applicationCategory" content="BusinessApplication" />
+        <meta itemprop="name" content="SlickETL" />
 
         <!-- Page wraper -->
         <div id="page-wrapper" class="gray-bg @ViewBag.SpecialClass">
