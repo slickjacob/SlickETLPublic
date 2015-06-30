@@ -186,32 +186,27 @@
 
 
 @section scripts {
-    <script>
+    <script>        
         $(document).ready(function () {
 
-            $('#loading-example-btn').click(function () {
-                btn = $(this);
-                simpleLoad(btn, true)
-
-                // Ajax example
-                //                $.ajax().always(function () {
-                //                    simpleLoad($(this), false)
-                //                });
-
-                simpleLoad(btn, false)
+            $.expr[":"].contains = $.expr.createPseudo(function (arg) {
+                return function (elem) {  
+                    return $(elem).text().toUpperCase().indexOf(arg.toUpperCase()) >= 0;
+                };
             });
+
+            $("#faq_search").keyup(function () {
+                var search = $("#faq_search").val();
+                if (search.trim() == "") {
+                    $(".faq-item").show();
+                }
+                else {
+                    $(".faq-item:not(:contains('" + search + "'))").hide();
+                    $(".faq-item:contains('" + search + "')").show();
+                }
+            })
+            
         });
 
-        function simpleLoad(btn, state) {
-            if (state) {
-                btn.children().addClass('fa-spin');
-                btn.contents().last().replaceWith(" Loading");
-            } else {
-                setTimeout(function () {
-                    btn.children().removeClass('fa-spin');
-                    btn.contents().last().replaceWith(" Refresh");
-                }, 2000);
-            }
-        }
     </script>
 }
