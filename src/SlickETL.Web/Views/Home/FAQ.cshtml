@@ -28,7 +28,7 @@
             <div class="ibox-content m-b-sm border-bottom">
                 <div class="text-center p-lg">
                     <h2>
-                        <i class="fa fa-question-circle logo-name"></i><br />
+                        <i class="fa fa-question-circle logo-name hidden-xs"></i><br />
                         If you don't find the answer to your question
                     </h2>
                     please <a href="@Url.Action("Index","Contact",new {req="faq"})">send it to us</a> and we'll be sure it gets answered.
@@ -55,7 +55,7 @@
                         <div id="faq1" class="panel-collapse collapse " itemprop="suggestedAnswer" itemscope itemtype="http://schema.org/Answer">
                             <div class="faq-answer" itemprop="text">
                                 <p>
-                                    We've put a lot of effort into making our interface simple for everybody.If you're halfway decent with computers, and you know what you want to do with your data, and you're willing to spend a couple of hours learning the basics of the system, you'll be
+                                    We've put a lot of effort into making our interface simple for everybody. If you're halfway decent with computers, you know what you want to do with your data, and you're willing to spend a couple of hours learning the basics of the system, you'll be
                                     amazed at what it can do.
                                 </p>
                                 <p>
@@ -67,7 +67,6 @@
                     </div>
                 </div>
             </div>
-
 
             <div class="faq-item" itemscope itemtype="http://schema.org/Question">
                 <div class="row">
@@ -92,7 +91,7 @@
                                 </p>
                                 <p>
                                     One of the biggest distinguishing features of our platform is that you don't have to build anything else to make it work. (Like file watchers or configuration databases or SQL Agent jobs.)
-                                    Our web based UI lets you design a job, run it and monitor it all in the same tool.
+                                    Our web based UI lets you design a job, run it, and monitor it all in the same tool.
                                 </p>
                             </div>
                         </div>
@@ -180,17 +179,105 @@
                 </div>
             </div>
 
+            <div class="faq-item" itemscope itemtype="http://schema.org/Question">
+                <div class="row">
+                    <div class="col-md-9">
+                        <a data-toggle="collapse" href="#faq6" class="faq-question" itemprop="name text">You're easy to use, but can you handle 'big data?'</a>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="tag-list">
+                            <span class="tag-item">General</span>
+                            <span class="tag-item">Scalability</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div id="faq6" class="panel-collapse collapse " itemprop="suggestedAnswer" itemscope itemtype="http://schema.org/Answer">
+                            <div class="faq-answer" itemprop="text">
+                                <p>
+                                    Setup a call with us and we'll tell you a funny story about big data.
+
+                                    But for now, it depends on what you mean. We can load half a million rows of data into a database in a under a minute, and we can import/export several
+
+                                    hundred megabyte files. In our experience that covers the real-world use cases for most firms. If you need to move multiple terabytes of data around on a regular basis, ours may not be the best tool to use, but give us a call and we'll help you figure it out.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" itemscope itemtype="http://schema.org/Question">
+                <div class="row">
+                    <div class="col-md-9">
+                        <a data-toggle="collapse" href="#faq7" class="faq-question" itemprop="name text">I'm new to this... What exactly is ETL?</a>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="tag-list">
+                            <span class="tag-item">General</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div id="faq7" class="panel-collapse collapse " itemprop="suggestedAnswer" itemscope itemtype="http://schema.org/Answer">
+                            <div class="faq-answer" itemprop="text">
+                                <p>
+                                    It stands for "Extract, Transform, and Load." It's a generic industry term used for any process where you moving data at rest
+                                    from one place to another. That could be from database to database, from file to database, from database to file, etc. 
+
+                                    A lot of people use ETL workflows without realizing it. If you've ever pasted a spreadsheet into a database, saved a query to a file, 
+                                    or converted a file from one format to another, you've done ETL. And chances are, when you see what our tool can do, you'll wonder why you
+                                    wasted time doing it the other way!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" itemscope itemtype="http://schema.org/Question">
+                <div class="row">
+                    <div class="col-md-9">
+                        <a data-toggle="collapse" href="#faq8" class="faq-question" itemprop="name text">Is it really possible to build a web-based full-featured ETL tool?</a>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="tag-list">
+                            <span class="tag-item">General</span>
+                            <span class="tag-item">Scalability</span>
+                            <span class="tag-item">Usability</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div id="faq8" class="panel-collapse collapse " itemprop="suggestedAnswer" itemscope itemtype="http://schema.org/Answer">
+                            <div class="faq-answer" itemprop="text">
+                                <p>
+                                    We believe it is. On this subject, we believe we have 2 key advantages over our competitors... 1) Our team has a background
+                                    using ETL tools in a large enterprise, so we know the real-world problems that are encountered by using traditional tools. 2) Our 
+                                    system has been designed from the ground up focusing on the cloud and the browser. We want our system to be as easy to use as possible,
+                                    and we want there to be as few barriers as possible to onboarding SlickETL. <br/><br/>
+                                    With a combination of our experience and our architectural approach, we think our web-based UI can satisfy most needs for most companies.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </div>
 
 
 @section scripts {
-    <script>        
+    <script>
         $(document).ready(function () {
 
             $.expr[":"].contains = $.expr.createPseudo(function (arg) {
-                return function (elem) {  
+                return function (elem) {
                     return $(elem).text().toUpperCase().indexOf(arg.toUpperCase()) >= 0;
                 };
             });
@@ -205,7 +292,7 @@
                     $(".faq-item:contains('" + search + "')").show();
                 }
             })
-            
+
         });
 
     </script>
