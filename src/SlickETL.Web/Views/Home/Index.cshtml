@@ -89,9 +89,22 @@
                                         export files, <br />
                                         and transfer data
                                     </h1>
-                                    <p>
-                                        <a class="btn btn-lg btn-primary" href="@Url.Action("Index","Contact",new {req="demo"})" role="button">Schedule a Demo</a>
-                                    </p>
+
+                                    @*<a class="btn btn-lg btn-primary" href="@Url.Action("Index","Contact",new {req="demo"})" role="button">Schedule a Demo</a>*@
+                                    <form id="signupForm">
+                                        <div class="input-group" style="max-width:90%;">
+                                            <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                                            <input name="EmailAddress" id="EmailAddress" type="email" data-val="true" data-val-email="Please enter a valid email address!" data-val-required="Please enter a valid email address!" placeholder="Enter your email to get updates about our product" class="form-control" style="height:42px;">
+                                            <span class="input-group-btn">
+                                                <button type="submit" id="quickSignup" class="btn btn-primary">
+                                                    <span id="btnText">Go</span>
+                                                    <span id="btnSpinner"><i class="fa fa-spin fa-spinner hidden"></i></span>
+                                                </button>
+                                            </span>
+                                        </div>
+                                        <span class="field-validation-valid" data-valmsg-for="EmailAddress" data-valmsg-replace="true"></span>
+                                    </form>
+
                                 </div>
                             </div>
                         </div>
@@ -209,7 +222,7 @@
                         <div class="col-lg-6 text-right m-t-lg wow zoomIn">
                             @*<img src="~/Theme/Landing/img/laptop.png" style="max-width:100%;" alt="laptop" itemprop="screenshot" />*@
                             <img src="~/Content/images/dash.png" style="max-width:100%;" alt="laptop" itemprop="screenshot" />
-</div>
+                        </div>
                         <div class="col-lg-3 features-text text-right wow fadeInRight">
                             <small>SIMPLICITY</small>
                             <h2>Accessible / Intuitive / Automatic </h2>
@@ -437,6 +450,24 @@
     <script src="~/Theme/Landing/js/cbpAnimatedHeader.js"></script>
     <script src="~/Theme/Landing/js/wow.min.js"></script>
     <script src="~/Theme/Landing/js/inspinia.js"></script>
-
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#signupForm").submit(function (event) {
+                event.preventDefault();
+                if ($("#signupForm").valid()) {
+                    $("#btnSpinner").removeClass("hidden");
+                    $("#EmailAddress").addClass("disabled");
+                    $("#quickSignup").addClass("disabled");
+                    $.post("@Url.Action("QuickSignup","Contact")", $("#signupForm").serialize(), function () {
+                        $("#signupForm").html("<h3 class='brand-font'>Thanks! Checkout our contact page if you want to send us a message.</h3>");
+                    }).fail(function (a, b, c, d) {
+                        $("#signupForm").html("<h3><span class='brand-font'>Shoot!</span> Something went wrong. Can you verify that you entered a valid email address and try again?? </h3>");
+                    });
+                }
+            })
+        });
+    </script>
 </body>
 </html>

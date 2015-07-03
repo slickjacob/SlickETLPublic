@@ -244,6 +244,7 @@
     <Compile Include="Results\ChallengeResult.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="Utility\Email.cs" />
+    <Compile Include="Utility\MailChimp.cs" />
     <Compile Include="Utility\ReCaptcha.cs" />
   </ItemGroup>
   <ItemGroup>

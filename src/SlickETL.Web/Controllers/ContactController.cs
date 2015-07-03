@@ -41,6 +41,25 @@ namespace SlickETL.Web.Controllers
         }
 
         [HttpPost]
+        public void QuickSignup(string EmailAddress)
+        {
+            var tc = new TelemetryClient();
+            tc.TrackEvent("QuickSignupPost");
+            Trace.TraceInformation("QuickSignup:{0}", EmailAddress);
+            try
+            {
+                SlickETL.Web.Utility.MailChimp.Signup(EmailAddress, "N/A", "N/A", "N/A", "QuickSignup");
+            }
+            catch (Exception ex)
+            {
+               
+                tc.TrackEvent("QuickSignupError");
+                Trace.TraceError("Quick Signup Error: {0}",ex.Message);
+                throw;
+            }
+        }
+
+        [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Confirm(ContactModel contact)
         {
@@ -68,15 +87,7 @@ namespace SlickETL.Web.Controllers
                 //subscribe if requested
                 if (contact.Subscribe)
                 {
-                    var mailChimpListID = "c048a56a60";
-                    var email = new EmailParameter() { Email = contact.Email };
-                    var mc = new MailChimpSignUpModel();
-                    mc.FirstName = contact.FirstName;
-                    mc.LastName = contact.LastName;
-                    mc.Company = contact.Company;
-                    mc.Hook = contact.Hook;
-                    var mcm = new MailChimpManager("e60fe47c1d4845c1292f6f0352946403-us11");
-                    EmailParameter results = mcm.Subscribe(mailChimpListID, email, mc,updateExisting:true,doubleOptIn:false);
+                    SlickETL.Web.Utility.MailChimp.Signup(contact.Email, contact.FirstName, contact.LastName, contact.Company, contact.Hook);
                 }
 
                 //send message if included
