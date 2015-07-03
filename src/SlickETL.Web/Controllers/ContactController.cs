@@ -76,7 +76,7 @@ namespace SlickETL.Web.Controllers
                     mc.Company = contact.Company;
                     mc.Hook = contact.Hook;
                     var mcm = new MailChimpManager("e60fe47c1d4845c1292f6f0352946403-us11");
-                    EmailParameter results = mcm.Subscribe(mailChimpListID, email, mc,updateExisting:true);
+                    EmailParameter results = mcm.Subscribe(mailChimpListID, email, mc,updateExisting:true,doubleOptIn:false);
                 }
 
                 //send message if included
